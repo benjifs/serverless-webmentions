@@ -1,0 +1,28 @@
+{
+  "name": "serverless-webmentions",
+  "description": "serverless webmention receiver",
+  "version": "0.1.0",
+  "main": "index.js",
+  "keywords": [
+    "indieweb",
+    "webmentions",
+    "netlify",
+    "blobs",
+    "serverless"
+  ],
+  "author": "Benji Encalada Mora (https://benji.dog)",
+  "homepage": "https://github.com/benjifs/serverless-webmentions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjifs/serverless-webmentions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benjifs/serverless-webmentions/issues"
+  },
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "webmention-handler-netlify-blobs": "^0.2.0",
+    "webmention-receiver": "^0.2.3"
+  }
+}

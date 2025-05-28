@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>serverless-webmentions</title>
+		<style>
+			html {
+				color-scheme: light dark;
+				font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>serverless-webmentions</h1>
+			<dl>
+				<dt><b>POST</b> <code>/webmention</code></dt>
+				<dd>Webmention receiver</dd>
+				<dt><b>GET</b> <code>/process</code></dt>
+				<dd>Process queue of received webmentions.</dd>
+				<dt><b>GET</b> <code>/webmentions?url</code></dt>
+				<dd>Return all webmentions for <code>url</code>.</dd>
+				<dt><b>GET</b> <code>/webmentions?token</code></dt>
+				<dd>Return all webmentions received grouped by target. <b>REQUIRED:</b> <code>token</code></dd>
+				<dt><b>GET</b> <code>/import?token&webmentionio</code></dt>
+				<dd>Import webmentions from <a href="https://webmention.io">webmention.io</a>. <b>REQUIRED:</b> <code>token</code> and <code>webmentionio</code> token</dd>
+				<dt><b>GET</b> <code>/cleanup?token</code></dt>
+				<dd>Deletes all stored values. Do not enable this in your <i>production</i> environment. <u>Only use while testing.</u></dd>
+			</dl>
+		</main>
+		<footer>
+			<a href="https://github.com/benjifs/serverless-webmentions">Source Code</a> -
+			<a href="https://benji.dog">benji</a>
+		</footer>
+	</body>
+</html>

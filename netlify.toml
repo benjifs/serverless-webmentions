@@ -1,0 +1,20 @@
+[build]
+  publish = "public"
+
+[functions]
+  node_bundler = "esbuild"
+
+[functions."process"]
+  schedule = "@daily"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[template.environment]
+  URLS = "Comma separated list of URLs without http"
+  GENERATED_TOKEN = "Generate a random string for the token"
+  NETLIFY_SITEID = "(Optional) Site ID for Netlify blob"
+  NETLIFY_TOKEN = "(Optional) Netlify Personal Access Token"
+  WEBHOOK = "(Optional) URL to send POST request to after webmention received"
