@@ -54,7 +54,7 @@ Sample response:
       }
     }
   ],
-	"https://example.com/target2": [
+  "https://example.com/target2": [
     {
       "source": "https://source2",
       "target": "https://example.com/target2",
