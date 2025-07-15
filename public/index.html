@@ -17,6 +17,8 @@
 			<dl>
 				<dt><b>POST</b> <code>/webmention</code></dt>
 				<dd>Webmention receiver</dd>
+				<dt><b>DELETE</b> <code>/webmention?token&source&target</code></dt>
+				<dd>Force delete a processed webmention for <code>source</code> and <code>target</code>. <b>REQUIRED:</b> <code>token</code>.</dd>
 				<dt><b>GET</b> <code>/process</code></dt>
 				<dd>Process queue of received webmentions.</dd>
 				<dt><b>GET</b> <code>/webmentions?url</code></dt>
