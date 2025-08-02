@@ -23,6 +23,6 @@
   "license": "MIT",
   "dependencies": {
     "webmention-handler-netlify-blobs": "^0.3.0",
-    "webmention-receiver": "^0.5.0"
+    "webmention-receiver": "^0.6.0"
   }
 }
