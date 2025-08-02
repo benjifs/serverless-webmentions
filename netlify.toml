@@ -4,8 +4,8 @@
 [functions]
   node_bundler = "esbuild"
 
-#[functions."process"]
-#  schedule = "@daily"
+[functions."process"]
+  schedule = "@daily"
 
 [[redirects]]
   from = "/*"
