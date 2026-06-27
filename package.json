@@ -1,7 +1,7 @@
 {
   "name": "serverless-webmentions",
   "description": "serverless webmention receiver",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "index.js",
   "keywords": [
     "indieweb",
@@ -22,7 +22,7 @@
   "type": "module",
   "license": "MIT",
   "dependencies": {
-    "webmention-handler-netlify-blobs": "^0.3.0",
-    "webmention-receiver": "^0.6.0"
+    "webmention-handler-netlify-blobs": "^0.4.0",
+    "webmention-receiver": "^0.7.0"
   }
 }
