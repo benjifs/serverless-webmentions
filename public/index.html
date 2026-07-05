@@ -24,7 +24,9 @@
 				<dt><b>GET</b> <code>/webmentions?url</code></dt>
 				<dd>Return all webmentions for <code>url</code>.</dd>
 				<dt><b>GET</b> <code>/webmentions?token</code></dt>
-				<dd>Return all webmentions received grouped by target. <b>REQUIRED:</b> <code>token</code></dd>
+				<dd>Return all targets that have received a webmention. <b>REQUIRED:</b> <code>token</code></dd>
+				<dt><b>GET</b> <code>/webmentions?token&all</code></dt>
+				<dd>Return all webmentions received grouped by target. Might timeout using Netlify functions. <b>REQUIRED:</b> <code>token</code></dd>
 				<dt><b>GET</b> <code>/import?token&webmentionio</code></dt>
 				<dd>Import webmentions from <a href="https://webmention.io">webmention.io</a>. <b>REQUIRED:</b> <code>token</code> and <code>webmentionio</code> token</dd>
 				<dt><b>GET</b> <code>/cleanup?token</code></dt>
